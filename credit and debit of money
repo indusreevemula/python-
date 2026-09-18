@@ -1,0 +1,33 @@
+class BankAccount:
+    def __init__(self, money, cash):
+        self.money = money
+        self.cash = cash
+        self.balance = money
+
+    def deposit(self):
+        # Prompts user to input the amount to deposit
+        money = int(input("Enter amount to deposit: "))
+        self.balance = self.balance + money
+        print("deposited :", money)
+
+    def withdraw(self):
+        # Prompts user to input the amount to withdraw
+        cash = int(input("Enter amount to withdraw: "))
+        self.balance = self.balance - cash
+        print("withdraw :", cash)
+
+    def displaybalance(self):
+        print("balance :", self.balance)
+
+# --- Execution ---
+Accholdername = input("Enter Account Holder Name: ")
+Accnumber = int(input("Enter Account Number: "))
+balance = int(input("Enter Initial Balance: "))
+
+# Creating the object instance
+b = BankAccount(balance, 0)
+
+# Calling the methods
+b.deposit()
+b.withdraw()
+b.displaybalance()
