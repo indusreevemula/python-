@@ -1,0 +1,13 @@
+class Employee:
+    def details(self):
+        self.name = "Rahul"
+        self.emp_id = 101
+        self.salary = 25000
+
+        print("Employee Name:", self.name)
+        print("Employee ID:", self.emp_id)
+        print("Salary:", self.salary)
+
+
+e1 = Employee()
+e1.details()
