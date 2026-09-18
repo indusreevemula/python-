@@ -1,0 +1,10 @@
+class Sample(Demo):
+    def info(self):
+        print(self.name)
+        print(self.age)
+
+sam1 = Sample("abc", 12)
+sam1.info()
+
+sam2 = Sample("xyz", 11)
+sam2.info()
